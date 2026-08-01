@@ -18,7 +18,7 @@ import mlflow
 
 RAW_DIR = "../faq_dataset_raw"
 OUTPUT_DIR = "faq_dataset_preprocessing"
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 MIN_WORDS = 3
 
 DAGSHUB_USERNAME = "MuhammadHabibna"
