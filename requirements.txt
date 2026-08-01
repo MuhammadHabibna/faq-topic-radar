@@ -4,3 +4,4 @@ matplotlib
 wordcloud
 sentence-transformers
 mlflow
+dagshub
