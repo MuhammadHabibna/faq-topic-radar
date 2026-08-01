@@ -41,7 +41,7 @@ jobs:
       - name: Run preprocessing + MLflow logging
         working-directory: preprocessing
         env:
-          DAGSHUB_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
+          DAGSHUB_USER_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
         run: python automate_preprocessing.py
 
       - name: Commit preprocessing results
