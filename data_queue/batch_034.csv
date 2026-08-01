@@ -1,0 +1,101 @@
+flags,utterance,category,intent
+BIQC,"i wanna check the options for delivery, can u help me?",DELIVERY,delivery_options
+BIL,is it possible to download an invoice?,INVOICES,get_invoice
+BML,i want to know if i can register more than one user account with a single email,ACCOUNT,create_account
+BPL,"I'd like to see the mail to contact Client Service, please",CONTACT,contact_customer_service
+BILC,"you're not helping, how do I talk to a person?",CONTACT,contact_human_agent
+BILC,"i get an error message when i try to make a payment for my online order, what do i have to do?",PAYMENT,payment_issue
+BLQC,I have an issue when trying to make a payment and I want to report it,PAYMENT,payment_issue
+BILQC,"I want a user account, how do I open one?",ACCOUNT,create_account
+BLCZ,I have a issue when trying to pay with card and I want to notify it,PAYMENT,payment_issue
+BML,tell me if my packages are out for delivery,ORDER,track_order
+BPSLWC,"I don't want my fucking online account, I need help deleting it, please",ACCOUNT,delete_account
+BICZ,"I got an error when I tried to pay, but I was charged anyway , what should I do?",PAYMENT,payment_issue
+BQDZ,ask an agent to find inormation about the status of my refund,REFUNDS,track_refund
+BILC,"I'm happy with the service, what do I have to do to lodge a review?",FEEDBACK,review
+BILC,"I can't understand you, how do I talk to a person?",CONTACT,contact_human_agent
+BILC,"i want to file a consumer complaint, what do i have to do?",FEEDBACK,complaint
+BIMSL,what information can you tell me about downloading some bills?,INVOICES,get_invoice
+BILQ,can you tell me what the mail address to contact Customer Support is?,CONTACT,contact_customer_service
+BISLQC,"i can't find my bills, can i check them?",INVOICES,check_invoices
+BMLQ,I want to solve issues paying,PAYMENT,payment_issue
+BIMLC,"i want to view cancellation penalties, what should i do?",CANCELLATION_FEE,check_cancellation_fee
+BMQ,tell me if I can get some invoices,INVOICES,get_invoice
+BLCZ,"I don't want my user account , remove it",ACCOUNT,delete_account
+BIPMLDW,"could you ask an agent how I could request some fucking bills, please?",INVOICES,get_invoice
+BPQ,id like to check the options for delivery,DELIVERY,delivery_options
+BL,I want to see the number to contact Client Service,CONTACT,contact_customer_service
+BIL,how can I obtain a bill?,INVOICES,get_invoice
+B,tell me how to know where my order is,ORDER,track_order
+BICZ,"someone stole my password, what do I have to do  to recover it ?",ACCOUNT,recover_password
+BIPLQDW,"can u ask an agent how i could call fucking customer service, please?",CONTACT,contact_customer_service
+B,when will my order arrive?,ORDER,track_order
+BIQC,"i havent got an account, what do i have to do?",ACCOUNT,create_account
+BIQD,can u ask an agent to track my order?,ORDER,track_order
+BI,when is my ticket going to arrive?,DELIVERY,delivery_period
+BSLQC,"i ordered an item, i need help changing my purchase",ORDER,change_order
+BIPLQ,"please, can u show me my invoices?",INVOICES,check_invoices
+BIPLC,"I'd like to inform of an issue making a payment, what can I do?",PAYMENT,payment_issue
+BISLQC,"I lost my invoices, can I see them?",INVOICES,check_invoices
+BPSLQC,"you arent helping, i need help talking to a human, please",CONTACT,contact_human_agent
+BPML,"please, I want to know if I can register more than one online account with the same email address",ACCOUNT,create_account
+BILQC,"I want information, can I send an email to Customer Service?",CONTACT,contact_customer_service
+BLQC,"I want to check my shipment, tell me where to do it",ORDER,track_order
+BMLQ,i wanna know if i can register more than one account with a single email address,ACCOUNT,create_account
+BILQWC,"i wanna view the fucking options for delivery, what can i do?",DELIVERY,delivery_options
+BPLQC,"you arent helping and id like to contact someone, please",CONTACT,contact_human_agent
+BILC,"an error pops when I attempt to pay, what do I have to do?",PAYMENT,payment_issue
+BIL,how can i make a complaint for a service?,FEEDBACK,complaint
+BILC,"I'm happy with the service, can I submit a comment?",FEEDBACK,review
+BLQC,i dont want my account and i wanna close it,ACCOUNT,delete_account
+BILQC,"I have a question, can I speak with Customer Service?",CONTACT,contact_customer_service
+BL,I want to know where to check my package,ORDER,track_order
+BILC,"I want information, what should I do to call Customer Support?",CONTACT,contact_customer_service
+BIPLDZ,can you ask an agent how I could report a problem with my payment ?,PAYMENT,payment_issue
+BILCZ,"the show was postyponed, what can i do to get a reimbursement?",REFUNDS,get_refund
+BM,how to track my orders,ORDER,track_order
+BIPLQD,"could u ask an agent to cancel my profile, please?",ACCOUNT,delete_account
+BSLCZ,"I've got no user accounht, I need help registering",ACCOUNT,create_account
+BLC,i need information and i want to send an email to customer support,CONTACT,contact_customer_service
+BPLDW,"ask an agent where to view the fucking cancellation fee, please",CANCELLATION_FEE,check_cancellation_fee
+BLD,ask an agent where i can notify a problem making a payment,PAYMENT,payment_issue
+BLC,"i changed my mind, cancel my user account",ACCOUNT,delete_account
+BIL,can you show me the free phone number to contact Client Service?,CONTACT,contact_customer_service
+BILC,"i want to submit an opinion for a service, what do i have to do?",FEEDBACK,review
+BLQZ,i want to spaek with customer support,CONTACT,contact_customer_service
+BILC,"I want to track my shipment, can you tell me how to do it?",ORDER,track_order
+BILC,"I haven't got a user account, how can I open one?",ACCOUNT,create_account
+BMLC,"I want to track my deliveries, tell me where to do it",ORDER,track_order
+BPLQ,"please, i want to know what the number to contact customer support is",CONTACT,contact_customer_service
+BILC,"I have no online account, can you open one?",ACCOUNT,create_account
+BIPLQWCZ,"id like to see your fuckingv money back policy, what do i have to do?",REFUNDS,check_refund_policy
+B,i need information about the options for delivery,DELIVERY,delivery_options
+BLC,"i want to use my other user account, switch them",ACCOUNT,switch_account
+BILQC,"I have a problem paying with card, what should I do to inform of it?",PAYMENT,payment_issue
+BILQ,can i make changes to the information on my profile?,ACCOUNT,edit_account
+BIMLQ,can i register more than one account with a single email?,ACCOUNT,create_account
+BMLQ,i want to know if i can see some bills,INVOICES,get_invoice
+BILQC,"I got an error when I tried to pay, but my card was charged anyway, can I notify it?",PAYMENT,payment_issue
+BMSL,tell me about seeing some bills,INVOICES,get_invoice
+BILC,"I don't understand you, can you speak with a human agent?",CONTACT,contact_human_agent
+BSL,I want information about requesting a bill,INVOICES,get_invoice
+BIPMLQC,"id like to see my invoice, can u help me?",INVOICES,check_invoices
+BSLQ,I need help creating a user account,ACCOUNT,create_account
+BILQC,"an error pops when i try to pay with card, can u help me?",PAYMENT,payment_issue
+BIMSLC,"I can't find my bill, can I check it?",INVOICES,check_invoices
+BILC,"I got an error message when I attempted to pay, but I was charged anyway, what should I do to inform of it?",PAYMENT,payment_issue
+BIL,what's the email address of Customer Support?,CONTACT,contact_customer_service
+BLC,I bought an item and I want to change my purchase,ORDER,change_order
+BILC,"the concert was cancelled, what can i do to get a reimbursement?",REFUNDS,get_refund
+BILC,"i need a user account, how do i create one?",ACCOUNT,create_account
+BILC,"I don't want my online account, how can I close it?",ACCOUNT,delete_account
+BM,help me check the cancellation fees,CANCELLATION_FEE,check_cancellation_fee
+BSLC,"I want information, I need help contacting Customer Support",CONTACT,contact_customer_service
+BIM,can you tell me if I can track my orders?,ORDER,track_order
+BILCZ,"I gt an error message when I tried to pay, but my card was charged anyway, can you notify it?",PAYMENT,payment_issue
+BLC,"I got an error message when I attempted to make a payment, but I was charged anyway and I want to notify it",PAYMENT,payment_issue
+BILC,"i have no user account, what should i do to open one?",ACCOUNT,create_account
+BIMLQ,how do I inform of issues paying?,PAYMENT,payment_issue
+BILCZ,"I haev a problem paying with card, what can I do?",PAYMENT,payment_issue
+BLZ,were to see the status of my purchase,ORDER,track_order
+BILC,"I want to check the options for ticket delivery, what can I do?",DELIVERY,delivery_options

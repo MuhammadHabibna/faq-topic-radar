@@ -1,0 +1,101 @@
+flags,utterance,category,intent
+BILQC,"I want information, what do I have to do to call Customer Support?",CONTACT,contact_customer_service
+BIQCZ,"I got an error when I trkwd to pay, but I was charged anyway, how do I report it?",PAYMENT,payment_issue
+BL,where to check your reimbursement policy,REFUNDS,check_refund_policy
+BLQC,i cant remember my account password and i wanna recover it,ACCOUNT,recover_password
+BSLCZ,"i lost my bills, i needd help viewing them",INVOICES,check_invoices
+BILQZ,how do Iswitchj to another account?,ACCOUNT,switch_account
+BILC,"the show was postponed, what do I have to do to obtain a refund?",REFUNDS,get_refund
+BLC,"I want a user account, help me create one",ACCOUNT,create_account
+BILQC,"i wanna check my delivery, can you tell me how to do it?",ORDER,track_order
+BSLQ,I need help checking my delivery,ORDER,track_order
+BLC,"I'm happy with the service, make an opinion",FEEDBACK,review
+BSL,I need help closing my account,ACCOUNT,delete_account
+BILQC,"I want to check my order, can you tell me where I can do it?",ORDER,track_order
+BLCZ,"I have an issue when trying to pay for my online order, help e report it",PAYMENT,payment_issue
+BLC,"I don't have a shipping address, help me set it up",SHIPPING,set_up_shipping_address
+BL,tell me if there's a newsletter to stay up-to-date,NEWSLETTER,newsletter_subscription
+BMSL,i need help reporting issues paying,PAYMENT,payment_issue
+BPSLQZ,"please, i want to request information about downloadingan invoice",INVOICES,get_invoice
+BILQ,can i notify an issue making a payment?,PAYMENT,payment_issue
+BLD,ask an agent how to make a consumer complaint,FEEDBACK,complaint
+BLQD,ask an agent how i can see their money back policy,REFUNDS,check_refund_policy
+BIML,can you obtain some invoices?,INVOICES,get_invoice
+BMLQ,I want to get some bills,INVOICES,get_invoice
+BILC,"I want to open an account, can you help me?",ACCOUNT,create_account
+BILC,"the game was postponed, what can I do to get a refund?",REFUNDS,get_refund
+BSLC,"I don't have a shipping address, I need help setting it up",SHIPPING,set_up_shipping_address
+BLC,"i have a problem when trying to pay for my order, inform of it",PAYMENT,payment_issue
+BIPLQC,"id like to file a consumer complaint for a service, what do i have to do?",FEEDBACK,complaint
+BML,where to check my bill,INVOICES,check_invoices
+BLQC,"I got an error when I attempted to make a payment, but I was charged anyway and I want to inform of it",PAYMENT,payment_issue
+BILC,"I want to cancel my account, how can I do it?",ACCOUNT,delete_account
+BILQC,"I have a problem when trying to make a payment with card, what do I have to do to notify it?",PAYMENT,payment_issue
+BIPL,"please, can you check my bills?",INVOICES,check_invoices
+BM,tell me if my orders are out for delivery,ORDER,track_order
+BILQC,"I ordered an item, can I change my purchase?",ORDER,change_order
+BILQC,"I got an error when I attempted to make a payment, but my card was charged anyway, what can I do to notify it?",PAYMENT,payment_issue
+BLC,"I need information, contact Client Service",CONTACT,contact_customer_service
+BILQZ,howdo i notify a payment issue?,PAYMENT,payment_issue
+BILC,"I got an error when I attempted to make a payment, but I was charged anyway, what should I do to report it?",PAYMENT,payment_issue
+BLQ,I want to know if I can register two user accounts with a single email address,ACCOUNT,create_account
+BIPLQC,"i got an error when i tried to make a payment, but my card was charged anyway, could u report it?",PAYMENT,payment_issue
+BLC,I can't remember my password and I want to reset it,ACCOUNT,recover_password
+BIP,"please, can you tell me how I could track my order?",ORDER,track_order
+BILC,"I have an issue when trying to make a payment, what do I have to do to notify it?",PAYMENT,payment_issue
+BMSLQ,I want to get information about seeing some invoices,INVOICES,get_invoice
+BPLCZ,"the concert was postponed and i want to obtain an refund, please",REFUNDS,get_refund
+BL,help me write a comment,FEEDBACK,review
+BIPLEC,"I would like to inform of an issue paying, could you help me?",PAYMENT,payment_issue
+BILC,"i have a problem when trying to pay with card, what do i have to do to notify it?",PAYMENT,payment_issue
+BPMSLQZ,"I wanna ask for informztion about getting some invocies, please",INVOICES,get_invoice
+BIPMLQD,"please, could u ask an agent how i could notify payment issues?",PAYMENT,payment_issue
+BILC,"I can't understand you, what do I have to do to talk to a human?",CONTACT,contact_human_agent
+BPLCZ,"I lost my password and I'd like to retrieve  it, please",ACCOUNT,recover_password
+BQ,I need information about the status of my order,ORDER,track_order
+B,where to check your refund policy,REFUNDS,check_refund_policy
+BIQ,how can I edit my profile?,ACCOUNT,edit_account
+BILQC,"an error pops when I attempt to make a payment for my order, what can I do?",PAYMENT,payment_issue
+BILCZ,"I wan to view my bills, what can I do?",INVOICES,check_invoices
+BIL,where can I check your reimbursement policy?,REFUNDS,check_refund_policy
+BQCZ,"I lost my password, helpme recover it",ACCOUNT,recover_password
+BZ,Ihaven't got an account,ACCOUNT,create_account
+BILQ,how do i write a comment for a service?,FEEDBACK,review
+BILC,"I want to notify an issue with my payment, what do I have to do?",PAYMENT,payment_issue
+BIPMLC,"I'd like to check cancellation penalties, what can I do?",CANCELLATION_FEE,check_cancellation_fee
+BSLCZ,"I'm happy with theservice, Ineed help lodging a review",FEEDBACK,review
+BMLQ,i want to know how I can request some invoices,INVOICES,get_invoice
+BIM,can you tell me about the cancellation fees?,CANCELLATION_FEE,check_cancellation_fee
+BLCZ,"I haevn't got a user account, help me register",ACCOUNT,create_account
+BIPLQD,"could u ask an agent to inform of a payment issue, please?",PAYMENT,payment_issue
+BL,where to view your refund policy,REFUNDS,check_refund_policy
+BIL,how can I request a bill?,INVOICES,get_invoice
+BSL,I need help notifying a problem paying,PAYMENT,payment_issue
+BIMQ,how can I solve issues with my payment?,PAYMENT,payment_issue
+BLC,"I have no online account, create one",ACCOUNT,create_account
+BMSLC,"I lost my invoice, I need help viewing it",INVOICES,check_invoices
+BILC,"I don't like the service, can I submit a complaint?",FEEDBACK,complaint
+BPMLD,"please, ask an agent if i can notify issues paying",PAYMENT,payment_issue
+BLQC,"I got an error when I tried to make a payment, but I was charged anyway, help me notify it",PAYMENT,payment_issue
+BC,"I want an account, create one",ACCOUNT,create_account
+BIMLQ,how can I solve problems paying?,PAYMENT,payment_issue
+BL,tell me if I can create two online accounts with the same email,ACCOUNT,create_account
+BILQC,"I got an error message when I tried to pay, but I was charged anyway, how can I inform of it?",PAYMENT,payment_issue
+BILC,"i have a problem when trying to make a payment with card, what should i do to notify it?",PAYMENT,payment_issue
+BILC,"I have a problem when trying to make a payment with card, what do I have to do to report it?",PAYMENT,payment_issue
+BL,check my package,ORDER,track_order
+BSL,I need information about downloading an invoice,INVOICES,get_invoice
+BLC,"you're not helping, help me talk to someone",CONTACT,contact_human_agent
+BIPLD,"can you ask an agent where I could create a profile, please?",ACCOUNT,create_account
+BILC,"I've got no online account, can I register?",ACCOUNT,create_account
+BILQC,"I purchased an item, how can I modify my purchase?",ORDER,change_order
+BILC,"I want to recover my account password, can you help me?",ACCOUNT,recover_password
+BIMQD,can u ask an agent where to report payment issues?,PAYMENT,payment_issue
+BLQC,ive got no online account and i wanna create one,ACCOUNT,create_account
+BMSLQC,"I lost my invoice, I need help seeing it",INVOICES,check_invoices
+BILQC,"i wanna lodge a complaint for a service, what do i have to do?",FEEDBACK,complaint
+BIMLZ,how can I know wherr my hsipments are?,ORDER,track_order
+BL,how to lodge a complaint,FEEDBACK,complaint
+BILC,"I need a reimbursement, what can I do to get one?",REFUNDS,get_refund
+BILEC,"i am happy with the service, how do i file a comment?",FEEDBACK,review
+BILZ,can you tell me where tro see a bill?,INVOICES,get_invoice

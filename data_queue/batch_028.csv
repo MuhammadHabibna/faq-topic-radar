@@ -1,0 +1,101 @@
+flags,utterance,category,intent
+BIMLQ,how can I report problems paying?,PAYMENT,payment_issue
+BIL,can you tell me the mail address of the Customer Service?,CONTACT,contact_customer_service
+BILD,can you ask an agent if I can check my order?,ORDER,track_order
+BILQC,"I got an error message when I attempted to make a payment, but my card was charged anyway, what can I do to inform of it?",PAYMENT,payment_issue
+BIL,can you show me the free phone number to contact Customer Support?,CONTACT,contact_customer_service
+BILCZ,"an error pops when I attempt to make a payment for my order, cvan you help ne?",PAYMENT,payment_issue
+BL,tell me if I can create two online accounts with a single email,ACCOUNT,create_account
+BL,how to make changes to my shipping address,SHIPPING,change_shipping_address
+BILCZ,"I need information, can you talk to Cliebt Service?",CONTACT,contact_customer_service
+BI,can you tell me how I can get an invoice?,INVOICES,get_invoice
+BMSLQ,I need help notifying problems making a payment,PAYMENT,payment_issue
+BILC,"I have no profile, what should I do to create one?",ACCOUNT,create_account
+BILQ,how do I view your payment methods?,PAYMENT,check_payment_methods
+BIML,where do I check my packages?,ORDER,track_order
+BIC,"I lost my password, what should I do?",ACCOUNT,recover_password
+BLZ,tell me where I can see abill,INVOICES,get_invoice
+BILQC,"I want information, what should I do to speak with Client Service?",CONTACT,contact_customer_service
+BILQD,can u ask an agent if i can report a problem making a payment?,PAYMENT,payment_issue
+BLC,"I don't understand you, help me speak with a person",CONTACT,contact_human_agent
+BIMLQD,can u ask an agent to inform of payment issues?,PAYMENT,payment_issue
+BML,where to notify problems making a payment,PAYMENT,payment_issue
+BIC,"I have an issue paying with card, how do I report it?",PAYMENT,payment_issue
+BLQC,"youre not helping, help me contact someone",CONTACT,contact_human_agent
+BL,i want to contact someone,CONTACT,contact_human_agent
+BILQC,"I purchased something, what should I do to change my purchase?",ORDER,change_order
+BLQZ,I want to know  if I can create two user accounts with the same email,ACCOUNT,create_account
+BL,how to track my package,ORDER,track_order
+BILCZ,"I want to submit a  review, what should I do?",FEEDBACK,review
+BL,where to cancel my profile,ACCOUNT,delete_account
+BLZ,modkfy my order,ORDER,change_order
+BPML,I'd like to inform of problems paying,PAYMENT,payment_issue
+BILQ,can i write a comment for a service?,FEEDBACK,review
+BLQCZ,"I have an problem when trying to pay for my online order, inform of it",PAYMENT,payment_issue
+BLC,"i got an error message when i tried to pay, but i was charged anyway, i need help informing of it",PAYMENT,payment_issue
+BLQCZ,"im happy with the service , lodge a comment",FEEDBACK,review
+BIPMLD,"please, could you ask an agent to notify problems with my payment?",PAYMENT,payment_issue
+BPLQW,"i wanna know where I could see a fucking bill, please",INVOICES,get_invoice
+BIPLC,"I forgot my account password, could you reset it, please?",ACCOUNT,recover_password
+BILZ,can I notify a payment propblem ?,PAYMENT,payment_issue
+BILQC,"I have an issue making a payment, what should I do?",PAYMENT,payment_issue
+BILQC,"I need a refund, what do I have to do to request one?",REFUNDS,get_refund
+BILC,"i have an issue when trying to pay, what do i have to do to notify it?",PAYMENT,payment_issue
+BILC,"I have an issue when trying to pay for my online order, can you help me?",PAYMENT,payment_issue
+BC,"i have an issue paying for my order, help me report it",PAYMENT,payment_issue
+BILQC,"I want information, what do I have to do to call Client Service?",CONTACT,contact_customer_service
+BILC,"i have a problem when trying to pay, what can i do to inform of it?",PAYMENT,payment_issue
+BPLC,"I got an error when I attempted to pay, but my card was charged anyway and I want to inform of it, please",PAYMENT,payment_issue
+BL,how to see the status of my refund,REFUNDS,track_refund
+BL,where to delete my user account,ACCOUNT,delete_account
+BIMSLQCZ,"I lost my invoice, what do I have to do to see ti?",INVOICES,check_invoices
+BLC,"the game was postponed, obtain a refund",REFUNDS,get_refund
+BZ,There is a problem with the reggistration,ACCOUNT,registration_problems
+BIC,"I have an issue paying with card, can you report it?",PAYMENT,payment_issue
+BLQ,I want to send an email to Client Service,CONTACT,contact_customer_service
+BISLQCZ,"I didn't receive my bills, what should I do to se them?",INVOICES,check_invoices
+BSL,I need help seeing your payment options,PAYMENT,check_payment_methods
+BILQC,"i wanna solve a problem making a payment, what should i do?",PAYMENT,payment_issue
+BILQCZ,"i wanna create a user account, what can i o?",ACCOUNT,create_account
+BIPLZ,how could I inform of a paymeent problem ?,PAYMENT,payment_issue
+BLQ,I want information about the email of the Customer Support,CONTACT,contact_customer_service
+BILQC,"i wanna report a problem paying, what do i have to do?",PAYMENT,payment_issue
+BQC,i need an account and i want to create one,ACCOUNT,create_account
+BILQC,"i want to check your money back policy, what should i do?",REFUNDS,check_refund_policy
+BLQC,"I have a problem when trying to pay with card, I need help informing of it",PAYMENT,payment_issue
+BILQ,where do I leave a comment for a service?,FEEDBACK,review
+BISLQCZ,"I lost my bills, whatshould I do to check them?",INVOICES,check_invoices
+BILC,"i want to see my invoices, what should i do?",INVOICES,check_invoices
+BIQCZ,"I bought na item, how can I change my order?",ORDER,change_order
+BIPLQC,"I need information, can I talk to Customer Service, please?",CONTACT,contact_customer_service
+B,i want to see the phone number to contact Customer Service,CONTACT,contact_customer_service
+BIPLQWC,"i wanna submit a fucking complaint, could u help me?",FEEDBACK,complaint
+BIQC,"I want an account, how do I create one?",ACCOUNT,create_account
+BLZ,I'm having issues creating a acount,ACCOUNT,registration_problems
+BIMLQ,how do I report issues making a payment?,PAYMENT,payment_issue
+BIPMLEC,"I would like to see my bill, could you help me?",INVOICES,check_invoices
+BMS,information about getting some invoices,INVOICES,get_invoice
+BILCZ,"I want to see the options for ticket delivery , can you help me?",DELIVERY,delivery_options
+BILCZ,"I want to check my dlivery, can you tell me how to do it?",ORDER,track_order
+BI,is my order out for delivery?,ORDER,track_order
+BLQ,talk to Customer Support,CONTACT,contact_customer_service
+BIC,"I need an account, what do I have to do?",ACCOUNT,create_account
+BISLC,"I can't find my invoices, what should I do to see them?",INVOICES,check_invoices
+BILQDZ,can u ask an agent to modify ther information on my profile?,ACCOUNT,edit_account
+BIL,can you show me the email of Client Service?,CONTACT,contact_customer_service
+BLQC,"youre not helping, speak with a human",CONTACT,contact_human_agent
+BLCZ,"i ned information, help me talk to client service",CONTACT,contact_customer_service
+BIMSL,what can you tell me about requesting some invoices?,INVOICES,get_invoice
+BIPQD,could u ask an agent about their payment methods?,PAYMENT,check_payment_methods
+BILC,"I'm discontent with the service, can I file a complaint?",FEEDBACK,complaint
+BIC,"i want to check the status of my refund, what should i do?",REFUNDS,track_refund
+BIL,can i contact client service?,CONTACT,contact_customer_service
+BPLEQC,"I am happy with the service, make a comment, please",FEEDBACK,review
+BPLQD,ask an agent how I could change my purchase,ORDER,change_order
+BIL,can you tell me if you have a newsletter to stay informed?,NEWSLETTER,newsletter_subscription
+BMSLQZ,I wanna know somethingabout seeing some bills,INVOICES,get_invoice
+BL,i want to request a refund,REFUNDS,get_refund
+BIMLQ,how can i solve problems with my payment?,PAYMENT,payment_issue
+BSLZ,I need elp seeing the ticket delivcery options,DELIVERY,delivery_options
+BIPLDZ,"can you ask an agent to shw me my bills, please?",INVOICES,check_invoices
+BILQC,"my account was hacked, what can i do to get it back?",ACCOUNT,recover_password
