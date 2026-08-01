@@ -1,0 +1,53 @@
+name: Data Pipeline
+
+on:
+  workflow_dispatch:   # trigger manual dulu buat testing
+
+permissions:
+  contents: write
+
+jobs:
+  release-batch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Release next batch
+        run: python release_batch.py
+
+      - name: Commit new batch + state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add faq_dataset_raw/ batch_state.json
+          git diff --staged --quiet || git commit -m "Release new data batch"
+          git push
+
+  preprocessing:
+    needs: release-batch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run preprocessing + MLflow logging
+        working-directory: preprocessing
+        env:
+          DAGSHUB_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
+        run: python automate_preprocessing.py
+
+      - name: Commit preprocessing results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add preprocessing/faq_dataset_preprocessing/
+          git diff --staged --quiet || git commit -m "Update preprocessed data"
+          git push

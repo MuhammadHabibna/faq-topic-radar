@@ -14,10 +14,30 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
+import dagshub
+import mlflow
+
 RAW_DIR = "../faq_dataset_raw"
 OUTPUT_DIR = "faq_dataset_preprocessing"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 MIN_WORDS = 3
+
+DAGSHUB_USERNAME = "MuhammadHabibna"
+DAGSHUB_REPO = "faq-topic-radar"
+
+
+def log_to_mlflow(initial_rows: int, df_clean: pd.DataFrame) -> None:
+    """Log parameter & metric preprocessing ke MLflow (tracking server DagsHub)."""
+    dagshub.init(repo_owner=DAGSHUB_USERNAME, repo_name=DAGSHUB_REPO, mlflow=True)
+    mlflow.set_experiment("data_preparation")
+
+    with mlflow.start_run():
+        mlflow.log_param("initial_rows", initial_rows)
+        mlflow.log_param("min_word_threshold", MIN_WORDS)
+        mlflow.log_metric("final_row_count", len(df_clean))
+        mlflow.log_metric("rows_dropped", initial_rows - len(df_clean))
+        mlflow.log_artifact(os.path.join(OUTPUT_DIR, "cleaned_text.csv"))
+    print("Logged ke MLflow (DagsHub)")
 
 
 def load_data(raw_dir: str = RAW_DIR) -> pd.DataFrame:
@@ -67,7 +87,8 @@ def generate_embeddings(df: pd.DataFrame, model_name: str = EMBEDDING_MODEL) -> 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    df_clean = clean_text(load_data())
+    df_raw = load_data()
+    df_clean = clean_text(df_raw)
     embeddings = generate_embeddings(df_clean)
 
     cleaned_path = os.path.join(OUTPUT_DIR, "cleaned_text.csv")
@@ -77,6 +98,8 @@ def main():
 
     print(f"\nDisimpan ke: {cleaned_path}")
     print(f"Disimpan ke: {embeddings_path}")
+
+    log_to_mlflow(len(df_raw), df_clean)
 
 
 if __name__ == "__main__":
