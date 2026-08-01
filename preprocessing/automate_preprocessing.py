@@ -14,7 +14,6 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-import dagshub
 import mlflow
 
 RAW_DIR = "../faq_dataset_raw"
@@ -28,9 +27,11 @@ DAGSHUB_REPO = "faq-topic-radar"
 
 def log_to_mlflow(initial_rows: int, df_clean: pd.DataFrame) -> None:
     """Log parameter & metric preprocessing ke MLflow (tracking server DagsHub)."""
-    dagshub.init(repo_owner=DAGSHUB_USERNAME, repo_name=DAGSHUB_REPO, mlflow=True)
-    mlflow.set_experiment("data_preparation")
+    os.environ["MLFLOW_TRACKING_USERNAME"] = DAGSHUB_USERNAME
+    os.environ["MLFLOW_TRACKING_PASSWORD"] = os.environ["DAGSHUB_TOKEN"]
+    mlflow.set_tracking_uri(f"https://dagshub.com/{DAGSHUB_USERNAME}/{DAGSHUB_REPO}.mlflow")
 
+    mlflow.set_experiment("data_preparation")
     with mlflow.start_run():
         mlflow.log_param("initial_rows", initial_rows)
         mlflow.log_param("min_word_threshold", MIN_WORDS)
