@@ -49,7 +49,7 @@ CLEANED_TEXT_PATH = "../preprocessing/faq_dataset_preprocessing/cleaned_text.csv
 
 RANDOM_SEED = 42
 
-GEMINI_MODEL_NAME = "gemini-1.5-flash"
+GEMINI_MODEL_NAME = "gemini-3.5-flash-lite"
 GEMINI_MIN_INTERVAL_SECONDS = 4.5
 GEMINI_MAX_RETRIES = 5
 GEMINI_CHECKPOINT_PATH = "gemini_label_checkpoint.json"

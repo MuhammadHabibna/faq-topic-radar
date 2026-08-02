@@ -3,3 +3,5 @@ __pycache__/
 mlruns/
 .DS_Store
 *.pyc
+retraining/_retrain_tmp/
+retraining/gemini_label_checkpoint.json
