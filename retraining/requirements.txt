@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+sentence-transformers
+umap-learn
+hdbscan
+bertopic
+mlflow
+gensim
+google-generativeai
+safetensors
