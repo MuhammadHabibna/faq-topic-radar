@@ -1,0 +1,57 @@
+name: Weekly Model Retraining
+
+on:
+  schedule:
+    # Setiap Senin jam 02:00 UTC (~09:00 WIB). Ganti angka jam di cron
+    # ("0 2 * * 1") kalau mau jadwal beda -- format: menit jam hari-bulan bulan hari-minggu.
+    - cron: "0 2 * * 1"
+  workflow_dispatch:   # trigger manual buat testing
+
+permissions:
+  contents: write   # gak dipakai buat push balik saat ini (lihat TODO di bawah), disiapin jaga-jaga
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Jaga-jaga: HDBSCAN/UMAP kadang butuh compile dari source kalau wheel
+      # prebuilt gak tersedia buat kombinasi Python/OS runner ini. Gak
+      # ngerugiin kalau ternyata gak kepake (apt-get install idempotent & cepat).
+      - name: Install build tools (safety net buat HDBSCAN/UMAP native deps)
+        run: sudo apt-get update && sudo apt-get install -y build-essential
+
+      - name: Install dependencies
+        run: pip install -r retraining/requirements.txt
+
+      # CATATAN: sengaja TIDAK set PYTHONIOENCODING=utf-8 di sini. Itu cuma
+      # perlu buat run manual di Windows lokal (MLflow print emoji ke stdout,
+      # gak kebaca default codepage cp1252 Windows). Runner Ubuntu ini
+      # defaultnya udah UTF-8, jadi baris itu gak relevan -- jangan ditambahin
+      # lagi tanpa alasan baru.
+      - name: Run retrain_model.py
+        working-directory: retraining
+        env:
+          DAGSHUB_TOKEN: ${{ secrets.DAGSHUB_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python retrain_model.py
+
+      - name: Retrain selesai
+        run: echo "Retrain mingguan sukses -- model baru ke-register di MLflow Model Registry."
+
+      # CATATAN: retrain_model.py SENGAJA tidak auto-promote model baru ke
+      # stage Production (keputusan desain -- lihat docstring retrain_model.py).
+      # Jadi gak ada step "promote otomatis" di sini. Setelah workflow ini
+      # selesai, review dulu metrik run barunya di MLflow UI, baru kalau oke
+      # jalankan retraining/promote_version.py manual dari laptop.
+
+      # TODO (opsional, belum diimplementasikan): bisa ditambah step lanjutan
+      # buat download artifact topic_assignments_<tanggal>.csv dari run yang
+      # baru dibuat (lewat MLflow API) lalu commit balik ke repo, kalau nanti
+      # diputuskan CSV itu perlu di-track juga di git (saat ini cuma
+      # tersimpan di MLflow, bukan file lokal permanen).
