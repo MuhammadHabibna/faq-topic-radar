@@ -13,6 +13,10 @@ Production -- itu keputusan manual setelah review metrik.
 
 Jalankan dari folder retraining/:
     python retrain_model.py
+
+CATATAN WINDOWS: jalankan dengan $env:PYTHONIOENCODING="utf-8" dulu (PowerShell)
+atau set PYTHONIOENCODING=utf-8 (CMD) sebelum run -- MLflow print emoji ke
+stdout yang gak kebaca default codepage Windows (cp1252).
 """
 
 import json
@@ -43,6 +47,7 @@ DAGSHUB_REPO = "faq-topic-radar"
 MODEL_REGISTRY_NAME = "faq-topic-model"
 MODEL_ARTIFACT_DIR = "bertopic_model_final"
 TOPIC_EMBEDDINGS_FILENAME = "topic_embeddings.safetensors"
+BASELINE_LABELS_FILENAME = "topic_labels_v1_baseline.json"
 
 EMBEDDINGS_PATH = "../preprocessing/faq_dataset_preprocessing/embeddings.npy"
 CLEANED_TEXT_PATH = "../preprocessing/faq_dataset_preprocessing/cleaned_text.csv"
@@ -200,7 +205,7 @@ def load_previous_model(is_bootstrap: bool) -> dict | None:
         # final id "generasi pertama". Perlu topics.json (file kecil, bukan
         # model penuh) buat tau berapa baris outlier di depan (_outliers).
         print(f"  -> Gak ketemu topic_assignments_*.csv di run {run_id} (run baseline, belum "
-              "pernah lewat reconciliation). Lanjut TANPA label lama.")
+              "pernah lewat reconciliation).")
         topics_json_path = mlflow.artifacts.download_artifacts(
             run_id=run_id, artifact_path=f"{MODEL_ARTIFACT_DIR}/topics.json"
         )
@@ -209,7 +214,20 @@ def load_previous_model(is_bootstrap: bool) -> dict | None:
         n_real = max(len(old_embeddings) - offset, 0)
         real_rows = old_embeddings[offset:]
         centroids_by_final_id = {i: real_rows[i] for i in range(n_real)}
-        labels: dict[int, str] = {}
+
+        # Cek ada gak backfill label baseline (hasil backfill_v1_labels.py,
+        # one-off) sebelum nyerah total ke labels kosong.
+        try:
+            baseline_labels_path = mlflow.artifacts.download_artifacts(
+                run_id=run_id, artifact_path=BASELINE_LABELS_FILENAME
+            )
+            with open(baseline_labels_path, "r", encoding="utf-8") as f:
+                labels = {int(k): v for k, v in json.load(f).items()}
+            print(f"  -> Ketemu label baseline v1 ({BASELINE_LABELS_FILENAME}), "
+                  f"{len(labels)} topik punya label.")
+        except Exception:
+            labels = {}
+            print("  -> Tidak ada label baseline sama sekali, lanjut tanpa label lama.")
     else:
         old_csv = pd.read_csv(csv_path)
         old_real = old_csv[old_csv["topic_id"] != -1]

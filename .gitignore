@@ -5,3 +5,5 @@ mlruns/
 *.pyc
 retraining/_retrain_tmp/
 retraining/gemini_label_checkpoint.json
+Membangun_model/topic_labels_v1_baseline.json
+Membangun_model/backfill_label_checkpoint.json
