@@ -1,7 +1,9 @@
 name: Data Pipeline
 
 on:
-  workflow_dispatch:   # trigger manual dulu buat testing
+  schedule:
+    - cron: "0 0 * * *"   # Setiap hari jam 07:00 WIB (00:00 UTC)
+  workflow_dispatch:   # trigger manual buat testing
 
 permissions:
   contents: write

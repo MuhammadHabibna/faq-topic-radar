@@ -2,9 +2,7 @@ name: Weekly Model Retraining
 
 on:
   schedule:
-    # Setiap Senin jam 02:00 UTC (~09:00 WIB). Ganti angka jam di cron
-    # ("0 2 * * 1") kalau mau jadwal beda -- format: menit jam hari-bulan bulan hari-minggu.
-    - cron: "0 2 * * 1"
+    - cron: "0 0 * * 1"   # Setiap hari Senin jam 07:00 WIB (00:00 UTC)
   workflow_dispatch:   # trigger manual buat testing
 
 permissions:
