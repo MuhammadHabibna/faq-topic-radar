@@ -82,7 +82,7 @@ BOOTSTRAP_CONFIG = {
 _TMP_DIR = "_retrain_tmp"
 _TOKEN_PATTERN = re.compile(r"[a-zA-Z']+")
 
-LATEST_RESULTS_DIR = "../latest_results"
+LATEST_RESULTS_DIR = "latest_results"
 LATEST_RESULTS_CSV_FILENAME = "topic_assignments_latest.csv"
 LATEST_RESULTS_SUMMARY_FILENAME = "SUMMARY.md"
 
