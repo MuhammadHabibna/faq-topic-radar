@@ -6,7 +6,7 @@ on:
   workflow_dispatch:   # trigger manual buat testing
 
 permissions:
-  contents: write   # gak dipakai buat push balik saat ini (lihat TODO di bawah), disiapin jaga-jaga
+  contents: write   # dipakai step "Commit latest results" buat push balik hasil terbaru ke repo
 
 jobs:
   retrain:
@@ -39,6 +39,14 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python retrain_model.py
 
+      - name: Commit latest results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add retraining/latest_results/
+          git diff --staged --quiet || git commit -m "Update latest topic assignments ($(date +%F))"
+          git push
+
       - name: Retrain selesai
         run: echo "Retrain mingguan sukses -- model baru ke-register di MLflow Model Registry."
 
@@ -47,9 +55,3 @@ jobs:
       # Jadi gak ada step "promote otomatis" di sini. Setelah workflow ini
       # selesai, review dulu metrik run barunya di MLflow UI, baru kalau oke
       # jalankan retraining/promote_version.py manual dari laptop.
-
-      # TODO (opsional, belum diimplementasikan): bisa ditambah step lanjutan
-      # buat download artifact topic_assignments_<tanggal>.csv dari run yang
-      # baru dibuat (lewat MLflow API) lalu commit balik ke repo, kalau nanti
-      # diputuskan CSV itu perlu di-track juga di git (saat ini cuma
-      # tersimpan di MLflow, bukan file lokal permanen).

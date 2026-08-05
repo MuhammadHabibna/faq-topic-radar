@@ -24,7 +24,7 @@ import os
 import random
 import re
 import time
-from datetime import date
+from datetime import date, datetime, timezone
 
 import google.generativeai as genai
 import hdbscan
@@ -81,6 +81,10 @@ BOOTSTRAP_CONFIG = {
 
 _TMP_DIR = "_retrain_tmp"
 _TOKEN_PATTERN = re.compile(r"[a-zA-Z']+")
+
+LATEST_RESULTS_DIR = "../latest_results"
+LATEST_RESULTS_CSV_FILENAME = "topic_assignments_latest.csv"
+LATEST_RESULTS_SUMMARY_FILENAME = "SUMMARY.md"
 
 
 # ============================================================
@@ -594,6 +598,61 @@ def log_to_mlflow(config: dict, new_model: BERTopic, metrics: dict, final_df: pd
 
 
 # ============================================================
+# Fungsi tambahan -- Simpan snapshot hasil terbaru langsung ke repo
+# (TAMBAHAN, bukan pengganti logging ke MLflow di Fungsi 8. File-file
+# di sini SELALU di-overwrite tiap run, bukan diarsipkan per tanggal.)
+# ============================================================
+
+def save_latest_results_to_repo(final_df: pd.DataFrame, metrics: dict, is_bootstrap: bool, config: dict) -> None:
+    print("Simpan snapshot hasil terbaru ke repo (retraining/latest_results/)...")
+    os.makedirs(LATEST_RESULTS_DIR, exist_ok=True)
+
+    csv_path = os.path.join(LATEST_RESULTS_DIR, LATEST_RESULTS_CSV_FILENAME)
+    final_df.to_csv(csv_path, index=False)
+
+    new_topics = (
+        final_df[final_df["is_new_topic"]]
+        .drop_duplicates("topic_id")
+        .sort_values("topic_id")
+    )
+    if new_topics.empty:
+        new_topics_section = (
+            "Tidak ada topik baru minggu ini -- semua pertanyaan cocok dengan topik yang sudah ada."
+        )
+    else:
+        new_topics_section = "\n".join(
+            f"- **{row.topic_label}** (topic_id: {row.topic_id})" for row in new_topics.itertuples()
+        )
+
+    updated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    summary = f"""# Ringkasan Topic Modeling Terbaru
+
+**Terakhir diupdate:** {updated_at}
+
+| Metrik | Nilai |
+|---|---|
+| Total topik | {metrics['n_topics']} |
+| Topik baru minggu ini | {metrics['n_new_topics']} |
+| Topik yang dikenali lagi | {metrics['n_matched_topics']} |
+| Outlier ratio | {metrics['outlier_ratio']:.2%} |
+| Topic coherence (c_v) | {metrics['coherence_cv']:.4f} |
+
+## Topik baru yang terdeteksi minggu ini
+
+{new_topics_section}
+
+---
+Detail lengkap per pertanyaan ada di [topic_assignments_latest.csv]({LATEST_RESULTS_CSV_FILENAME}).
+"""
+    summary_path = os.path.join(LATEST_RESULTS_DIR, LATEST_RESULTS_SUMMARY_FILENAME)
+    with open(summary_path, "w", encoding="utf-8") as f:
+        f.write(summary)
+
+    print(f"  -> Tersimpan: {csv_path}")
+    print(f"  -> Tersimpan: {summary_path}")
+
+
+# ============================================================
 # main
 # ============================================================
 
@@ -627,6 +686,8 @@ def main() -> None:
 
         print("\nTahap 8/8: Log ke MLflow & register model...")
         run_id = log_to_mlflow(config, new_model, metrics, final_df, is_bootstrap)
+
+        save_latest_results_to_repo(final_df, metrics, is_bootstrap, config)
     except Exception as e:
         print(f"\nGAGAL: {type(e).__name__}: {e}")
         raise
