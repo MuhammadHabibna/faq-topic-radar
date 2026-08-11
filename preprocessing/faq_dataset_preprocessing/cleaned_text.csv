@@ -896,6 +896,104 @@ help me call Client Service
 ask an agent if i can download some invoices
 "an error pops when i attempt to pay for my online order, can u help me?"
 tell me where I can check my deliveries
+how do i make a consumer complaint?
+"I don't want my online account, remove it"
+what can you tell me about getting some bills?
+"my user account has been hacked, what do i have to do?"
+"I have a problem paying for my online order, can I report it?"
+"I don't like the service, can you submit a complaint?"
+where do I track my orders?
+i want information about the status of my reimbursement
+"I got an error when I tried to pay, but my card was charged anyway, can you report it?"
+"i want to get some bills, tell me how I can do it"
+can I create two user accounts with the same email address?
+"Id like to request an invoice, can you tell me where I can do it?"
+"I can't understand you, how do I speak with a person?"
+how do I subscribe to the newsletter?
+"I can't remember my passwprd, what can I do to retrieve it?"
+i have a problem when trying to pay and i wanna inform of it
+"i can't find my bills, help me view them"
+help me request a bill
+"the concert was postponed, what can i do to request a reimbursement?"
+where can I download an invoice?
+"I made a mistake, what do I have to do to change my order?"
+I need a user account
+"i dont like the service, how can ilodge a complaint?"
+can you tell me if I can create more than one account with the same email?
+I want information about the emaill address of the Client Service
+can you tell me if i can regisger two accounts with a single email address?
+Iwould like to request a reund
+"I don't understand you, help me talk to someone"
+i wanna contact customer support
+I want to know how soon I can expect my tickets
+"I don't want my account, can I remove it?"
+"ask an agent where I could cancel my account, please"
+"I ordered a product, what should I do to change my purchase?"
+"my profile was hacked, what do i have to do to get it back?"
+"I have a problem when trying to pay for my online order, I need help informing of it"
+I had an issue opening an account
+where to notify payment problems
+i wold like to check my deliveries
+"you aren't helping, what should I do to talk to someone?"
+"please, can u ask an agent ot leave a comment?"
+"I forgot my account password, what do I have to do to recover it?"
+I want inforation about your reimbursement policy
+I want to know how I can modify my purchase
+someone stole my password and I want to retrieve it
+I need help writing a comment for a service
+"my profile was hacked, what should I do?"
+could you ask an agent how to inform of a fucking issue with my payment?
+ask an agent if i can inform of issues with my payment
+help me report a payment problem
+can u ask an agent to show me information about the options for ticket delivery?
+ask an agent how to remove my user account
+"I have a question, what do I have to do to send an email to Client Service?"
+where do I report problems making a payment?
+"I changed my mind, can you close my account?"
+"i cant understand you, can u talk to a human agent?"
+"you're not helping, could I speak with a human agent?"
+"I want to use my other account, how can I change them?"
+"I can't find my bill, what do I have to do to see it ?"
+"i changed my mind, can u remove my user account?"
+someone stole my account password and i want to reset it
+"I have a problem when trying to pay with card, what can I do to report it?"
+"I'm not happy with the service, how doI file a complaint?"
+tell me what the number to contact Customer Support is
+is there a free phone number to contact customer service?
+"I've got no profile, help me create one"
+tell me how I can see an invoice
+ask an agent when my tickets will arrive
+can you ask an agent if i can see a bill?
+"I'm not happy with the service, how can I make a complaint?"
+"could u ask an agent how I can check my order, please?"
+i want to notify issues making a payment
+"i have a question, help me speak with client service"
+"I have no profile, create one"
+I don't like the service and I want to make a complaint
+ask an agent how to close my usre account
+"please, can you ask an agent what the mail to contact Client Service is?"
+my user account's been hacked
+ask an agent what their payment options are
+"I have an issue when trying to pay with card, I need help informing of it"
+"I wanna request a bill, can you tell me where to do it?"
+can you tell me how I can know where my packages are ?
+how could i speak with a human agent?
+how to edit the information on my profile
+tell me how to check my package
+I want to know how to check my shipment
+"I've got no account, help me create onee"
+can I download some invoices?
+"I wanna obtain a bill, can you tell me how to do it?"
+I want information and I want to send an email to Customer Support
+I bought an item ands I want to modify my purchase
+I want informastion and I want to call Customer Support
+i have a problem paying and i want to notify it
+i want to talk toan person
+"I'd like to receive the newsletter, could you tell me how to do it?"
+could you ask an agent if i can check my package?
+"I want information, send an email to Customer Support"
+"I have a question, talk to Client Service"
+"i need an online account, what can i do to create one?"
 i want to know where to modify my purchase
 can u ask an agent for information about seeing an invoice?
 tell me if I can have more than one user account
@@ -3044,7 +3142,6 @@ my online account's been hacked
 can you find information about your money back policy?
 can u ask an agent how to update my profile ?
 "I have a question, what do I have to do to call Client Service?"
-I want information about the status of my reimbursement
 can you tell me if I can register several profiles with the same email address?
 "i want to track my order, what can i do?"
 I want to know if I can have several profiles
@@ -3161,7 +3258,6 @@ can you tell me if I can create two profiles with the same email?
 "i lost my invoices, can i check them?"
 tell me if I can create more than one profile with the same email address
 how do I change to another user account?
-"I made a mistake, what do i have to do to change my order?"
 "i got an error when i tried to pay, but my card was charged anyway and i wanna notify it"
 how do I remove my user account?
 "the concert was cancelled, how could I request a reimbursement?"
@@ -4023,7 +4119,6 @@ i wanna inform of an issue with my payment
 "I didn't receive my invoice, can you show it?"
 "i wanna request a refund, can u help me?"
 tell me if I can see a bill
-"i have a problem paying for my online order, can i report it?"
 can u ask an agent to check my shipment?
 how to view the status of my refund
 "i get an error message when i try to pay, can u help me?"
@@ -4963,7 +5058,6 @@ I want to see the free phone number of Customer Service
 "i want information, i need help sending an email to customer support"
 can u ask an agent how to inform of an issue with my payment?
 "I lost my pasword, can you recover it?"
-"I need an online account, what can I do to create one?"
 how to notify issues with my payment
 ask an agent how to track myorder
 "i wanna know the status of my refund, can u help me?"
@@ -8746,7 +8840,6 @@ I have an issue when trying to make a payment and I want to inform of it
 where can I see the status of my reimbursement?
 ask an gaent if I can get a bill
 "i wanna see your refund policy, what shiuld i do?"
-is there a free phone number to contact Customer Service?
 i cant understand you and i wanna contact someone
 "I changed my mind, can I cancel my user account?"
 can i register several profiles with a single email?
@@ -9188,7 +9281,6 @@ I need help deleting my profile
 "please , ask an agent whyere to see the cancellation fee"
 "you aren't helping, can I speak with a human?"
 can you tell me if I can register several user accountsw with a single email?
-can you ask an agent if i can see a bill?
 I can't find my bills and I want to view them
 how to leave a comment for a service
 "I have a question, what can I do to talk to Customer Support?"
