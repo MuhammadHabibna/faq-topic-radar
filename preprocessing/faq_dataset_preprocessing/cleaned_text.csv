@@ -1685,6 +1685,105 @@ tell me how to obtain a bill
 I can't understand you and I want to talk to a person
 "I lost my bills, help me view them"
 "you're not helping, can you speak with a human agent?"
+"I can't pay, can you help me?"
+"the event was cancelled, how do i request a reimbursement?"
+what can you tell me about obtaining a bill?
+"I changed my mind, how do I close my profile?"
+the game was postponed and i wanna obtain a reimbursement
+"can you tell me how I could modify my order, please?"
+"u are not helping, can u talk to a human?"
+can you tell me how to change my purchase?
+"I don't have an account, can you register?"
+can you tell me what the mail address of the Customer Support is?
+where to see a bill
+"please, I want to know if I can create several fucking user accounts with the same email address"
+how do I view the ticket delivery options?
+"I changed my mind, what should I do to close my account?"
+ask an agent if theres a newsletter i could subscribe to
+"I don't understand you, how can I contact a human agent?"
+"I purchased something, what can I do to change my order?"
+"I got an error when I tried to pay, but I was charged anyway, help me notify it"
+"I want to check my orders, tell me how I can do it"
+"i dot understand you, help me contact someone"
+"I don't understand you, what can I do to contact a human agent?"
+i need help viewwing your money back guarantee
+could you ask an agent where I could report an issue paying?
+"I wanna track my shipments, tell me where I can do it"
+"I got an error message when I tried to pay, but I was charged anyway, can you report it?"
+i havd a question and i wanna speak with customert support
+how can I report issues making a payment?
+"u are not helping, how do i contact a human agent?"
+"can you ask an agent how I could edit the information on my profile, please?"
+how can I create a profile?
+can u ask an agent to remove my profile?
+"an error pops when I attempt to pay, what can I do?"
+"I'm happy with the service, submit an opinion"
+"i need an account, what do i have to do to create one?"
+where do I inform of problems making a payment?
+"i cant understand you , how can i speak with a human?"
+"I changed my mind, how can I close my user account?"
+"i got an error when i attempted to make a payment, but my card was charged anyway, report it"
+could u ask an agent how to inform of a fucking issue paying?
+how can I view the cancellation penalty?
+"you're not helping, I need help talking to a human"
+"I can't find my bill, can you view it?"
+"do you mind asking an agent where I can see a fucking invoice, please?"
+I have an issue making a payment and I want to notify it
+how could i view your payment options?
+where do I see an invoice?
+I want to know if I can track my shipment
+tell me if i can see some invoices
+"the game was cancelled, what can i do to request a refund?"
+"I don't want my online account, how do I cancel it?"
+"I would like to view the status of my refund, could you help me, please?"
+"i lost my account password , can i retrieve it?"
+where can I report payment problems?
+"I'm happy with the service, make a comment"
+"someone stole my password, how do I recover it?"
+could you ask an agent how I could view the status of my purchase?
+i lost my bills and i wanna check them
+"I want to know the status of my reimbursement, how can I track it?"
+can you tell me how to know where my package is?
+I have issues registering
+how to notify a payment issue
+"i want to check your money back policy, can u help me, please?"
+I want to know if I can register several accounts with the same email address
+"I need information, how can I send an email to Customer Support?"
+I want to request information about seeing a bill
+can you tell me if I can see a bill?
+"I can't understand you, how can I speak with someone?"
+I need help viewing the status of my reimbursement
+how do I see the cancellation penalties?
+I have a problem when trying to pay with card and I want to notify it
+"I'd like to create a fucking profile, what should I do?"
+"I hjave no online account, what should I do to open one?"
+can you tell me what the phone number to contact client service is?
+"my user account's been hacked, what do I have to do to recover it?"
+I need help writing a review for a service
+where can I close my profile?
+I need help switching to another user account
+I need help solving issues with my payment
+ask an agent to check my invoices
+"ask an agent where I can report issues with my payment, please"
+I want to know about receiving the newsletter
+"please, could you ask an agent if I could get a fucking bill?"
+"i can't find my bill, how do i check it?"
+"I'm happy with the service, help me lodge a review"
+can you tell me if I can check my orders?
+can u ask an agent if you have a newsletter to keep me informed?
+how to file a complaint for a service
+i want to notify a payment issue
+i want to know if i can create two profiles with a single emal address
+can you ask an agent how I can report fucking issues with my payment?
+"I'm not happy with the service, I need help filing a complaint"
+"i havent got an account, how do i create one?"
+can you tell me if i can check my delivery?
+where can I change yo anothyer account?
+I need help speaking with Customer Service
+"I want information, what should I do to speak with Customer Service?"
+"I have a question, how can I contact Customer Support?"
+tell me what the mail of the Customer Service is
+how do I file a complaint for a service?
 i want to know where to modify my purchase
 can u ask an agent for information about seeing an invoice?
 tell me if I can have more than one user account
@@ -2309,7 +2408,6 @@ I want information about your payment options
 "you aren't helping, how do I talk to a person?"
 "I have a question, can you speak with Customer Support?"
 ask an agent about the options for delivery
-i want to know about receiving the newsletter
 "I'd like to check the cancellation fee, what can I do?"
 where do i view the cancelltion fees?
 can I innform of a problem paying?
@@ -2919,7 +3017,6 @@ where is my order?
 "I've got no account, can I create one?"
 "I need information, call Customer Support"
 I want to know if I can track my deliveries
-"I can't find my bill, how do I check it?"
 help me report a problem making a payment
 I need help opoening an user account
 "I purchased something, how can I change my purchase?"
@@ -3207,7 +3304,6 @@ where can I notify issues making a payment?
 can you ask an agent how to get an invoice?
 can you tell me how I cfan check my delivery?
 "please, could you ask an agent how I could reset my account password?"
-tell me if I can see some invoices
 "I didn't receive my invoices, can you view them?"
 "I have an issue when trying to pay, report it"
 "my account was hacked, can you get it back?"
@@ -4220,7 +4316,6 @@ can you show me the free number to contact Customer Service?
 how do I write a review for a service?
 "I lost my bills, check them"
 I want to know how I can check my shipments
-where can i report payment problems?
 "can u ask an agent where to make a consumer complaint for a service, please?"
 "i havent got an online account, what can i do to create one?"
 "I have no user account , what do I have to do to open one?"
@@ -4929,7 +5024,6 @@ i need information about the fucking email address of the Client Service
 can you tell me the mail of the Customer Support?
 "i have an issue making a payment , inform of it"
 "I got an error message when I tried to pay, but my card was charged anyway"
-i have a problem when trying to pay with card and i want to notify it
 i wannacall customer service
 I'm interested in your money back guarantee and I want information about it
 can you ask an agent for information about downloading a bill?
@@ -9118,7 +9212,6 @@ what are your payment methods?
 can you tell me if I can modify my purchase?
 "please, can u ask an agent where i can see the options for ticket delivery?"
 where can I see the cancellation penalty?
-"an error pops when i attempt to pay, what can i do?"
 an you tell me if I can own more than one profile?
 how to see your money back guarantee
 "I have a problem when trying to pay, how do I inform of it?"
@@ -9628,7 +9721,6 @@ I wanna know something about obtaijing an invoice
 I want to know if you have a newsletter i could subscribe to
 "the show was postponed, elp me request a refund"
 "i havent got an online account, can u open one?"
-can you tell me if i can see a bill?
 can u ask an agent if i can notify a problem paying?
 "i cant understand you, how can i contact a human?"
 "I got an error when I attempted to make a payment, but my card was charged anyway, notify it"
