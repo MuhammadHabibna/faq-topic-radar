@@ -1,0 +1,101 @@
+flags,utterance,category,intent
+BILQC,"I have an issue making a payment with card, how can I inform of it?",PAYMENT,payment_issue
+BLCZ,I need informatioj and I want to call Client Service,CONTACT,contact_customer_service
+BLC,"I got an error when I tried to make a payment, but I was charged anyway, I need help informing of it",PAYMENT,payment_issue
+BILZ,is it possible to track my shipment ?,ORDER,track_order
+BSLZ,I want to request informatoin about modifying my purchase,ORDER,change_order
+BL,help me switch to another user account,ACCOUNT,switch_account
+BILQC,"I want a user account, what do I have to do to open one?",ACCOUNT,create_account
+BILQC,"youre not helping, what should i do to contact a person?",CONTACT,contact_human_agent
+BLQ,i wanna know what the phone number to contact customer support is,CONTACT,contact_customer_service
+BMSLQ,I need help reporting payment problems,PAYMENT,payment_issue
+BL,I found problems creating a profile,ACCOUNT,registration_problems
+BL,I had problems when trying to open an account,ACCOUNT,registration_problems
+BLC,I've got no user account and I want to open one,ACCOUNT,create_account
+BIQC,"ive got no account, what do i have to do?",ACCOUNT,create_account
+BILC,"I want to know the status of my reimbursement, how do I track it?",REFUNDS,track_refund
+BILCZ,"I don't want my online account, whqt can I do to close it?",ACCOUNT,delete_account
+BILC,"I'm happy with the service, how do I make an opinion?",FEEDBACK,review
+BLQD,ask an agent if theres a newsletter to stay informed,NEWSLETTER,newsletter_subscription
+BL,I want to know if my shipment is on its way,ORDER,track_order
+BILC,"I'm happy with the service, what should I do to lodge an opinion?",FEEDBACK,review
+BILQD,can u ask an agent if i can see the status of my refund?,REFUNDS,track_refund
+BLQC,"I have a problem paying, notify it",PAYMENT,payment_issue
+BMLQZ,I want to knwo if I can requet some invoices,INVOICES,get_invoice
+BPLECZ,"the game was cancelled and I would like to obtain an refund, please",REFUNDS,get_refund
+BIPMLQD,"could u ask an agent where to track my shipments, please?",ORDER,track_order
+BL,I want to call Client Service,CONTACT,contact_customer_service
+BIC,"I want to track my refund, what do I have to do?",REFUNDS,track_refund
+BIQC,"i wanna create an account, what do i have to do?",ACCOUNT,create_account
+BLQD,ask an agent how i can see my invoices,INVOICES,check_invoices
+BILQC,"I have a problem when trying to pay for my online order, can I report it?",PAYMENT,payment_issue
+BIL,can i check your money back policy?,REFUNDS,check_refund_policy
+BILCZ,"i got a error message when i attempted to pay, but i was charged nayway, what do i have to do?",PAYMENT,payment_issue
+BLQCZ,"I got a error message when I tried to make a payment , but my card was charged anyway, I need help informing of it",PAYMENT,payment_issue
+BIMLQ,"I wanna download some invoices, can you tell me how I can do it?",INVOICES,get_invoice
+BILQ,can I solve a problem making a payment?,PAYMENT,payment_issue
+BL,how to contact someone,CONTACT,contact_human_agent
+BLC,"I don't want my online account, help me cancel it",ACCOUNT,delete_account
+BIPQD,could u ask an agent how I can change my order?,ORDER,change_order
+BLQ,i have an issue making a payment,PAYMENT,payment_issue
+BILC,"I want to submit a complaint for a service, can you help me?",FEEDBACK,complaint
+BL,I want to close my online account,ACCOUNT,delete_account
+BIMQW,how can I solve fucking payment issues?,PAYMENT,payment_issue
+BILQC,"im discontent with the service, how do i submit a consumer complaint?",FEEDBACK,complaint
+BILDZ,cn  you ask an agent how to check my shipment?,ORDER,track_order
+BLQC,"I have a problem when trying to pay, help me inform of it",PAYMENT,payment_issue
+BIMLQD,can you ask an agent if i can request some bills?,INVOICES,get_invoice
+BILC,"I got an error message when I attempted to pay, but my card was charged anyway, what can I do to inform of it?",PAYMENT,payment_issue
+BIQ,how can I check the cancellation fee?,CANCELLATION_FEE,check_cancellation_fee
+BILQC,"i got an error message when i tried to pay, but i was charged anyway, can u notify it?",PAYMENT,payment_issue
+BL,how to speak with a human,CONTACT,contact_human_agent
+BILQC,"I need information, what should I do to contact Client Service?",CONTACT,contact_customer_service
+BISLC,"I can't find my invoices, what do I have to do to see them?",INVOICES,check_invoices
+BLZ,help me check hte cancellation penalty,CANCELLATION_FEE,check_cancellation_fee
+BSL,I need help lodging a consumer complaint,FEEDBACK,complaint
+BLQDZ,ask an agent what hte email address to contact Customer Support is,CONTACT,contact_customer_service
+BIQC,"I have an issue when trying to pay for my order, what do I have to do?",PAYMENT,payment_issue
+BIL,can you contact Customer Support?,CONTACT,contact_customer_service
+BSLC,"i changed my mind, i need help deleting my user account",ACCOUNT,delete_account
+BILQC,"I want to submit a review, what can I do?",FEEDBACK,review
+BILC,"I want to solve a problem with my payment, what should I do?",PAYMENT,payment_issue
+BILQC,"I need an online account, how do I create one?",ACCOUNT,create_account
+BILC,"I changed my mind, can you delete my online account?",ACCOUNT,delete_account
+BL,I want to know if there's a newsletter to stay informed,NEWSLETTER,newsletter_subscription
+BILCZ,"I got an error message when I attempted to make a payment, but I wascharged anyway, how can I report it?",PAYMENT,payment_issue
+BIPLQC,"id like to view your money back guarantee, can u help me?",REFUNDS,check_refund_policy
+BL,call Client Service,CONTACT,contact_customer_service
+BILQC,"the event was cancelled, what can I do to obtain a reimbursement?",REFUNDS,get_refund
+BILQC,"I want a reimbursement, what can I do to request one?",REFUNDS,get_refund
+BILCZ,"I have an issue when trying to pay for myu online order, how do I notify it?",PAYMENT,payment_issue
+BSLQC,"I lost my bills, view them",INVOICES,check_invoices
+BILQC,"I got an error message when I attempted to pay, but my card was charged anyway, what can I do to notify it?",PAYMENT,payment_issue
+BPLWCZ,I want a fuckimg user account and I'd like to open one,ACCOUNT,create_account
+BILC,"I have an issue paying with card, what do I have to do to inform of it?",PAYMENT,payment_issue
+BILQD,can u ask an agent where i can create a profile?,ACCOUNT,create_account
+BILQC,"the game was cancelled, what should I do to obtain a reimbursement?",REFUNDS,get_refund
+BIPQD,"could u ask an agent how i can contact customer service, please?",CONTACT,contact_customer_service
+BILQ,where can I check the ticket delivery options?,DELIVERY,delivery_options
+BMLQ,i wanna know how to track my shipments,ORDER,track_order
+BILC,"I want to inform of a payment problem, what should I do?",PAYMENT,payment_issue
+BILQC,"I want information, what should I do to contact Customer Support?",CONTACT,contact_customer_service
+BILQC,"I purchased an item, how do i change my purchase?",ORDER,change_order
+BMLD,ask an agent where to see the cancellation fees,CANCELLATION_FEE,check_cancellation_fee
+BILQCZ,"I want to view your refund policy , what do I have to do?",REFUNDS,check_refund_policy
+BLQCZ,"I have a problem paying for my order,  help me report it",PAYMENT,payment_issue
+BIQDZ,can u ask an agent for informationabout the status of my refund?,REFUNDS,track_refund
+BILQWCZ,"the fucking  show was postponed, can I obtain a refund?",REFUNDS,get_refund
+BLEQC,u are not helping and i want to contact a person,CONTACT,contact_human_agent
+BLC,"I'm not happy with the service, submit a complaint",FEEDBACK,complaint
+BILC,"an error message pops when I try to make a payment for my order, can you help me?",PAYMENT,payment_issue
+BILQD,can u ask an agent to notify an issue making a payment?,PAYMENT,payment_issue
+BILQ,how do I speak with Client Service?,CONTACT,contact_customer_service
+BL,how to view the cancellation fee,CANCELLATION_FEE,check_cancellation_fee
+BPLQD,"please, ask an agent how to make a complaint",FEEDBACK,complaint
+BILQ,can I close my online account?,ACCOUNT,delete_account
+BILQDZ,can u ask an agent how to view the status of my purchase ?,ORDER,track_order
+BPL,"I want to get a bill, tell me where I can do it, please",INVOICES,get_invoice
+BSLQZ,I need help canceling my olne account,ACCOUNT,delete_account
+BLC,"I'm happy with the service, help me file an opinion",FEEDBACK,review
+BIL,where do i view my bills?,INVOICES,check_invoices
+BIL,what can I obtain a refund for?,REFUNDS,get_refund
