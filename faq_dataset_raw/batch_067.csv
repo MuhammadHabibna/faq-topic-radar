@@ -1,0 +1,101 @@
+flags,utterance,category,intent
+BMZ,I want to now if i can get some invoices,INVOICES,get_invoice
+BIL,can you tell me where to check my package?,ORDER,track_order
+BL,I want to know if I can track my delivery,ORDER,track_order
+BIL,can I notify a problem with my payment?,PAYMENT,payment_issue
+BILQC,"I get an error message when I try to make a payment with card, what do I have to do?",PAYMENT,payment_issue
+BIPQDW,can u ask an agent where i could file a fucking complaint?,FEEDBACK,complaint
+BMLC,"I want to track my shipments, tell me how I can do it",ORDER,track_order
+BILC,"the event was postponed, can I obtain a reimbursement?",REFUNDS,get_refund
+BL,where to modify my shipping address,SHIPPING,change_shipping_address
+BIPLQD,could u ask an agent where to report a problem paying?,PAYMENT,payment_issue
+BIL,what's the mail address of Customer Support?,CONTACT,contact_customer_service
+BILQC,"i got an error when i attempted to make a payment, but i was charged anyway, can u report it?",PAYMENT,payment_issue
+BICZ,"you aren't helping, acn I contact a human agent?",CONTACT,contact_human_agent
+BILC,"my profile's been hacked, how do I recover it?",ACCOUNT,recover_password
+BILQCZ,"i havet got a user account, how can i open one?",ACCOUNT,create_account
+BILQ,where can I view the cancellation penalty?,CANCELLATION_FEE,check_cancellation_fee
+BILC,"i want to see your reimbursement policy, what should i do?",REFUNDS,check_refund_policy
+BLC,"the concert was cancelled, request a reimbursement",REFUNDS,get_refund
+BLQC,"I have an issue making a payment with card, report it",PAYMENT,payment_issue
+BILC,"I want information, can you send an email to Customer Support?",CONTACT,contact_customer_service
+BIQD,can u ask an agent if i can check the status of my order?,ORDER,track_order
+BIPMLQD,"could you ask an agent if I could check my shipments, please?",ORDER,track_order
+BLQC,"i need information, send an email to client service",CONTACT,contact_customer_service
+BIPDW,"can you ask an agent what the fucking email address of Customer Service is, please?",CONTACT,contact_customer_service
+BSL,I want information about obtaining a bill,INVOICES,get_invoice
+BILC,"I don't want my online account, how can I remove it?",ACCOUNT,delete_account
+BILC,"i want to solve a payment problem, what should i do?",PAYMENT,payment_issue
+BSLQ,I need help making changes to the information on my profile,ACCOUNT,edit_account
+BSLQC,"I ordered something, I need help changing my purchase",ORDER,change_order
+BILC,"I got an error when I tried to make a payment, but I was charged anyway, how do I report it?",PAYMENT,payment_issue
+BL,where to write an opinion,FEEDBACK,review
+BIPLQD,could u ask an agent where to see their money back guarantee?,REFUNDS,check_refund_policy
+BIL,can you tell me what the hours of Client Service are?,CONTACT,contact_customer_service
+BLD,ask an agent if i can remove my online account,ACCOUNT,delete_account
+BIL,can you show me information about your money back policy?,REFUNDS,check_refund_policy
+BQC,"i lost my password, help me recover it",ACCOUNT,recover_password
+BILZ,csn you contact a human?,CONTACT,contact_human_agent
+BILQC,"I bought a product, what should I do to change my purchase?",ORDER,change_order
+BC,"I don't understand you, help me contact a human agent",CONTACT,contact_human_agent
+BILQ,where do I write an opinion?,FEEDBACK,review
+BL,an error message pops when I try to pay for my online order,PAYMENT,payment_issue
+BLQC,"I need a reimbursement, help me request one",REFUNDS,get_refund
+BILQ,can I register two accounts with the same email address?,ACCOUNT,create_account
+BIPLDWZ,"can you ask an agent where I can notify an fucking problem making a payment, please?",PAYMENT,payment_issue
+BILQC,"i want a refund, what do i have to do to obtain one?",REFUNDS,get_refund
+BIMLQD,can u ask an agent how I can track my shipments?,ORDER,track_order
+BILQC,"I need information, what should I do to talk to Customer Support?",CONTACT,contact_customer_service
+BLZ,"I want to download an invoiced, tell me how I can do it",INVOICES,get_invoice
+BILC,"my profile's been hacked, can you recover it?",ACCOUNT,recover_password
+BIMQ,can you tell me when my tickets are gonna arrive?,DELIVERY,delivery_period
+BLC,"the game was cancelled, get a refund",REFUNDS,get_refund
+BILQC,"I want to use my other profile, what should I do to switch them?",ACCOUNT,switch_account
+BIQC,"I made a mistake, how do I change my order?",ORDER,change_order
+BILC,"I'm not happy with the service, can I lodge a complaint?",FEEDBACK,complaint
+BC,"I want to subscribe to the newsletter, tell me how to do it",NEWSLETTER,newsletter_subscription
+BL,i want to know what the phone number to contact customer support is,CONTACT,contact_customer_service
+BILQC,"I want to track my delivery, can you tell me where I can do it?",ORDER,track_order
+BILC,"the show was postponed, what can i do to obtain a refund?",REFUNDS,get_refund
+BSLC,"I haven't got an online account, I need help registering",ACCOUNT,create_account
+BSLQCZ,I can't find my bklls and I want to check them,INVOICES,check_invoices
+BPMLW,I'd like to notify fucking issues with my payment,PAYMENT,payment_issue
+BMSLQZ,I need help inforning of issues making a payment,PAYMENT,payment_issue
+BL,i get an error message when i attempt to make a payment for my online order,PAYMENT,payment_issue
+BLZ,i wantto know how I can obtain an invoice,INVOICES,get_invoice
+BMSLQC,"i lost my bill, check it",INVOICES,check_invoices
+BPLQ,"I wanna know where to modify my purchase, please",ORDER,change_order
+BL,I want to know what the hours of Client Service are,CONTACT,contact_customer_service
+BLQZ,I want to know if I can create several usewr accounts with a single email aaddress,ACCOUNT,create_account
+BILQD,can u ask an agent if i can receive a refund?,REFUNDS,get_refund
+BPLQCZ,"i cant remember my password and id like to reset it, pleae",ACCOUNT,recover_password
+BL,tell me if I can register two user accounts with the same email,ACCOUNT,create_account
+BLCZ,"I bought an product, help me modify my purchase",ORDER,change_order
+BIPLW,"can you tell me if i can create two fucking online accounts with a single email address, please?",ACCOUNT,create_account
+BILQ,how can I talk to Client Service?,CONTACT,contact_customer_service
+BILQC,"ive got no account, what can i do to register?",ACCOUNT,create_account
+BLQ,I want to know if I can register two accounts with the same email address,ACCOUNT,create_account
+BILQ,can u find information about the email of the Customer Support?,CONTACT,contact_customer_service
+BILZ,where can I modify my shippinmg address?,SHIPPING,change_shipping_address
+BILC,"I've got no user account, what do I have to do to register?",ACCOUNT,create_account
+BIQD,can u ask an agent where i can get a refund?,REFUNDS,get_refund
+BILC,"I have a problem making a payment with card, how can I inform of it?",PAYMENT,payment_issue
+BPLQC,"i got an error message when i tried to make a payment, but i was charged anyway and id like to inform of it",PAYMENT,payment_issue
+BIMLQDZ,can u ask an agent how to notify sisues with my payment?,PAYMENT,payment_issue
+BLC,I changed my mind and I want to delete my online account,ACCOUNT,delete_account
+BIPLQC,"id like to notify a payment issue, can u help me?",PAYMENT,payment_issue
+BIL,what's the phone number to contact Client Service?,CONTACT,contact_customer_service
+BIPLD,"please, could you ask an agent if I can track my package?",ORDER,track_order
+BL,I want to know if I can track my package,ORDER,track_order
+BILC,"I don't have an online account, how can I open one?",ACCOUNT,create_account
+BLCZ,"my usr account was hacked, help me recover it",ACCOUNT,recover_password
+BILC,"I want to open an online account, what should I do?",ACCOUNT,create_account
+BPLDW,"please, ask an agent if i can check the status of my fucking purchase",ORDER,track_order
+BIPLQC,"i cant understand you, could i speak with a person, please?",CONTACT,contact_human_agent
+BILQDW,can u ask an agent where to obtain a fucking invoice?,INVOICES,get_invoice
+BMSL,information about requesting some bills,INVOICES,get_invoice
+BIL,where do I see my bills?,INVOICES,check_invoices
+BILQ,can you tell me the mail of Client Service?,CONTACT,contact_customer_service
+BLC,"my account's been hacked, help me get it back",ACCOUNT,recover_password
+BLQC,"I got an error message when I attempted to make a payment, but my card was charged anyway, I need help informing of it",PAYMENT,payment_issue
+BSLZ,I need hepl contacting a person,CONTACT,contact_human_agent
