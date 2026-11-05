@@ -1,0 +1,101 @@
+flags,utterance,category,intent
+BIMLZ,are my shipments on trheir way?,ORDER,track_order
+BIPLQDW,"please, could u ask an agent where i could track my fucking purchase?",ORDER,track_order
+BPL,"tell me if I could register two online accounts with the same email, please",ACCOUNT,create_account
+BIL,can you tell me the number to contact client service?,CONTACT,contact_customer_service
+BILC,"I want to notify a payment issue, what should I do?",PAYMENT,payment_issue
+BPML,tell me if I could register more than one online account with a single email address,ACCOUNT,create_account
+BILC,"I don't want my online account, what can I do to delete it?",ACCOUNT,delete_account
+BILC,"i need information, how do i send an email to customer service?",CONTACT,contact_customer_service
+BILC,"I've got no online account, what do I have to do?",ACCOUNT,create_account
+BILC,"I have a question, what should I do to send an email to Customer Support?",CONTACT,contact_customer_service
+BILC,"I want to file a comment, can you help me?",FEEDBACK,review
+BLC,"I have a problem paying, I need help informing of it",PAYMENT,payment_issue
+BILQCZ,"i ordered a product, what do I have to do to modify my  purchase?",ORDER,change_order
+BILQZ,can u show me the free no to contact customer service?,CONTACT,contact_customer_service
+BLD,ask an agent how to make an order,ORDER,place_order
+BIL,can you send an email to Customer Service?,CONTACT,contact_customer_service
+BILQ,can you tell me if I can receive the newsletter?,NEWSLETTER,newsletter_subscription
+BLQZ,I want to moeify my order before you send it,ORDER,change_order
+BIPLQCZ,"the cincert was postopned, can I get a refund, please?",REFUNDS,get_refund
+BILC,"I don't want my account, can you cancel it?",ACCOUNT,delete_account
+BILQ,can u show me information about the email address to contact Client Service?,CONTACT,contact_customer_service
+BILQZ,can you tell me if I can register two online accounts with an single email?,ACCOUNT,create_account
+BILQ,how can I make a consumer complaint?,FEEDBACK,complaint
+BILC,"i have a problem paying with card, what should i do to notify it?",PAYMENT,payment_issue
+BML,how to view my bill,INVOICES,check_invoices
+BLQD,"im interested in their money back policy, ask an agent for information about it",REFUNDS,check_refund_policy
+BILQCZ,"I want to make a conmsumer complaint, what should I do?",FEEDBACK,complaint
+BL,tell me what the mail of Customer Service is,CONTACT,contact_customer_service
+BILC,"the game was postponed, what can I do to request a reimbursement?",REFUNDS,get_refund
+BISL,what information do you have about modifying my purchase?,ORDER,change_order
+BILCZ,"I don't wantt my online account, can you delete it?",ACCOUNT,delete_account
+BIL,where can I track my purchase?,ORDER,track_order
+BSLQ,I wanna ask for information about seeing a bill,INVOICES,get_invoice
+BILQD,can u ask an agent how i can view my bills?,INVOICES,check_invoices
+BMSC,i didn't receive my invoice and i want to check it,INVOICES,check_invoices
+BPSLCZ,"my user account weas hacked, and I need help getting it back , please",ACCOUNT,recover_password
+BILQC,"I want to submit a comment, what can I do?",FEEDBACK,review
+BIPLC,"I have a problem when trying to make a payment with card, could you help me?",PAYMENT,payment_issue
+BIL,how do I leave an opinion?,FEEDBACK,review
+BLZ,"I want to ge a bill, tell me how to do it",INVOICES,get_invoice
+BILQC,"i have a problem paying, what can i do?",PAYMENT,payment_issue
+BILC,"the payment didn't go through, what should I do?",PAYMENT,payment_issue
+BIL,how can I switch to another profile?,ACCOUNT,switch_account
+BILQD,can u ask an agent how i can receive a refund?,REFUNDS,get_refund
+BILQZ,how do I snd an email to Customer Support?,CONTACT,contact_customer_service
+BIPQ,could I change my order?,ORDER,change_order
+BILCZ,"I changed my mind, can you delete my usef account?",ACCOUNT,delete_account
+BILZ,how do i see your money back policy ?,REFUNDS,check_refund_policy
+BILQC,"I want to view the options for ticket delivery, what do I have to do?",DELIVERY,delivery_options
+BIPLQC,"my profile's been hacked, could u recover it?",ACCOUNT,recover_password
+BLQC,I bought something and I want to change my purchase,ORDER,change_order
+BLQC,the concert was postponed and i wanna request a reimbursement,REFUNDS,get_refund
+BILC,"I have an issue when trying to pay for my online order, how do I inform of it?",PAYMENT,payment_issue
+B,where is your refund policy?,REFUNDS,check_refund_policy
+BSLQC,"I bought something, I need help modifying my order",ORDER,change_order
+BPLC,"i have a problem when trying to make a payment and i want to report it, please",PAYMENT,payment_issue
+BML,where to report problems with my payment,PAYMENT,payment_issue
+BIL,can you tell me if I can change my purchase?,ORDER,change_order
+BQ,I want to know if I can register several accounts with the same email,ACCOUNT,create_account
+BIML,"I want to get some bills, can you tell me how to do it?",INVOICES,get_invoice
+BL,how to make a consumer complaint,FEEDBACK,complaint
+BILWC,"I've got no fucking account, what can I do to register?",ACCOUNT,create_account
+BLC,"I'm interested in your money back policy, tell me about it",REFUNDS,check_refund_policy
+BIPLQD,could u ask an agent how to notify an issue with my payment?,PAYMENT,payment_issue
+BC,"I want to change my order, tell me where I can do it",ORDER,change_order
+BML,"I want to obtain some bills, can you show me some information?",INVOICES,get_invoice
+BSL,I need help writing an opinion,FEEDBACK,review
+BIPLD,can you ask an agent if I could view the ticket delivery options?,DELIVERY,delivery_options
+BLQZ,a error pops when I try to pay for my order,PAYMENT,payment_issue
+BILC,"I need a user account, what can I do to open one?",ACCOUNT,create_account
+BILQC,"I got an error message when I attempted to pay, but I was charged anyway, what should I do to notify it?",PAYMENT,payment_issue
+BILQC,"i got an error message when i attempted to pay, but my card was charged anyway, can u inform of it?",PAYMENT,payment_issue
+BILQC,"I have an issue paying for my online order, how do I report it?",PAYMENT,payment_issue
+BLQ,I have an issue making a payment,PAYMENT,payment_issue
+BMSL,I need help notifying issues making a payment,PAYMENT,payment_issue
+BIPLCZ,"I'd like to notify a pahment issue, what should I do?",PAYMENT,payment_issue
+BIQDZ,can u ask an agent how i cxan check the delivery options ?,DELIVERY,delivery_options
+BPLQDW,"please, ask an agent where i can write a fucking comment for a service",FEEDBACK,review
+BILC,"I want an account, what do I have to do to open one?",ACCOUNT,create_account
+BIQD,can u ask an agent to file a complaint?,FEEDBACK,complaint
+BLQC,i changed my mind and i want to cancel my user account,ACCOUNT,delete_account
+BL,tell me if there is a free number to contact Client Service,CONTACT,contact_customer_service
+BMLQ,"I wanna see some invoices, can you give me some information?",INVOICES,get_invoice
+BML,tell me how I can request some invoices,INVOICES,get_invoice
+BILQC,"I got an error when I tried to pay, but my card was charged anyway, what can I do to notify it?",PAYMENT,payment_issue
+BILQD,can u ask an agent how i can talk to client service?,CONTACT,contact_customer_service
+BIMQD,can u ask an agent to solve issues with my payment?,PAYMENT,payment_issue
+BILQC,"i purchased an item, what do i have to do to modify my purchase?",ORDER,change_order
+BILQC,"i ordered an item, how can I change my order?",ORDER,change_order
+BILQ,how can i inform of an issue making a payment?,PAYMENT,payment_issue
+BIPLD,could you ask an agent how I could notify an issue with my payment?,PAYMENT,payment_issue
+BILC,"I don't want my online account, can you close it?",ACCOUNT,delete_account
+BLQC,the show was postponed and I want to obtain a reimbursement,REFUNDS,get_refund
+BIL,can you tell me what the free number of client service is?,CONTACT,contact_customer_service
+BIC,"i have an issue paying for my order, what do i have to do to report it?",PAYMENT,payment_issue
+BILQD,can u ask an agent to show me their money back policy?,REFUNDS,check_refund_policy
+BL,I can't make a payment,PAYMENT,payment_issue
+BIQD,can u ask an agent if i can place an order?,ORDER,place_order
+BILQC,"I have a question, how can I call Client Service?",CONTACT,contact_customer_service
+BLD,ask an agent if customer support is available,CONTACT,contact_customer_service
